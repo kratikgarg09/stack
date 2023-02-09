@@ -53,7 +53,15 @@ public:
 };
 int main()
 {
-    string s = "(){}[](){}[]";
+    string s = "(){}[]({}[]";
     
+    Solution st;
+    bool x = st.isValid(s);
+    if(x){
+        cout << "string is valid";
+    }    
+    else{
+        cout << "Unbalanced";
+    }
     return 0;
 }
