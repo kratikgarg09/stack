@@ -34,6 +34,18 @@ void reverseStack(stack<int> &st)
     pushAtBottom(st, top);
 }
 
+void reverseStack2(stack<int> &st){
+    vector<int> arr;
+    while(!st.empty()){
+        arr.push_back(st.top());
+        st.pop();
+    }
+    for (int i = 0; i < arr.size(); i++)
+    {
+        st.push(arr[i]);
+    }    
+}
+
 void printStack(stack<int> st)
 {
 
@@ -55,7 +67,7 @@ int main()
     st.push(7);
     st.push(8);
     printStack(st);
-    reverseStack(st); 
+    reverseStack2(st); 
     printStack(st);
     return 0;
 }
