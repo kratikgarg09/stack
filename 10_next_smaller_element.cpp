@@ -1,4 +1,10 @@
 #include<stack>
+#include<iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
 vector<int> nextSmallerElement(vector<int> &arr, int n)
 {
     // Write your code here.
@@ -14,4 +20,7 @@ vector<int> nextSmallerElement(vector<int> &arr, int n)
         st.push(curr);
     }
     return ans;
+}
+int main(){
+    return 0;
 }
